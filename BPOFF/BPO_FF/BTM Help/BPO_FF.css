@@ -1,0 +1,701 @@
+/* Default CSS Stylesheet for a new Web Application project */
+
+td.tdFlag
+{
+	color: red;
+	height: 25;
+	font-family: Wingdings;
+	font-weight: normal;
+	font-size: 13pt
+}
+
+td.tdFlagUnread
+{
+	color: lightgrey;
+	height: 25;
+	font-family: Wingdings;
+	font-weight: normal;
+	font-size: 13pt
+}
+
+input.bShowOld
+{
+	cursor: hand;
+	color: black;
+	background-color: White;
+	text-align: center;
+	border: 1;
+	font-family: Arial;
+	font-weight: normal;
+	font-size: 8pt;
+	width: 15;
+	height:15
+}
+
+input.bUALink
+{
+	cursor: hand;
+	color: blue;
+	background-color: White;
+	text-align: left;
+	border: 0;
+	font-family: Arial;
+	font-weight: normal;
+	font-size: 8pt
+}
+INPUT.submit {
+    font-weight: normal;
+    font-size: 8pt;
+    font-family: Verdana, Arial;
+    cursor: hand;
+}
+
+input.bTB
+{
+	cursor: hand;
+	background-image:url(.//Images/3dBanner.bmp);
+	color: navy;
+	width: 25;
+	height: 25;
+	border: 0;
+	font-family: Webdings;
+	font-weight: normal;
+	font-size: 13pt
+}
+input.bTBs
+{
+	cursor: hand;
+	background-image:url(.//Images/3dBanner.bmp);
+	color: navy;
+	width: 20;
+	height: 20;
+	border: 0;
+	font-family: Webdings;
+	font-weight: normal;
+	font-size: 8pt
+}
+
+input.bTBHover
+{
+	cursor: hand;
+	background-color:rgb(248, 232, 167);
+	color: blue;
+	width: 25;
+	height: 25;
+	font-family: Webdings;
+	font-weight: normal;
+	font-size: 13pt
+}
+input.bTBHovers
+{
+	cursor: hand;
+	background-color:rgb(248, 232, 167);
+	color: blue;
+	width: 20;
+	height: 20;
+	font-family: Webdings;
+	font-weight: normal;
+	font-size: 8pt
+}
+
+input.bTB2
+{
+	cursor: hand;
+	background-image:url(.//Images/3dBanner.bmp);
+	color: black;
+	width: 25;
+	height: 25;
+	border: 0;
+	font-family: Wingdings 2;
+	font-weight: normal;
+	font-size: 13pt
+}
+input.bTB2s
+{
+	cursor: hand;
+	background-image:url(.//Images/3dBanner.bmp);
+	color: black;
+	width: 20;
+	height: 20;
+	border: 0;
+	font-family: Wingdings 2;
+	font-weight: normal;
+	font-size: 8pt
+}
+
+td.tdUABullet
+{
+	color: black;
+	border: 0;
+	font-family: Wingdings;
+	font-weight: bold;
+	font-size: 10pt;
+	vertical-align:text-top
+}
+
+td.tdUAAnchor
+{
+	color: blue;
+	border: 0;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 8pt;
+	cursor:hand;
+	text-decoration: underline
+}
+
+td.tdUAPoint
+{
+	color: black;
+	border: 0;
+	font-family: Arial;
+	font-weight: normal;
+	font-size: 8pt;
+	vertical-align:top
+}
+td.tdUABulletPoint
+{
+	color: black;
+	border: 0;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 8pt;
+	vertical-align:top
+}
+
+p.pNoRec
+{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 10pt
+}
+
+p.pTT
+{
+	font-family: Arial;
+	font-weight: normal;
+	font-size: 10pt
+}
+
+p.pUA1
+{
+	font-family: Arial;
+	font-weight: normal;
+	font-size: 8pt
+}
+
+p.pUANB
+{
+	color:#990000;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 8pt
+}
+td.tdUAH1
+{
+	color:Navy;
+	font-family:Arial;
+	font-size:10pt;
+	font-weight:bold;
+	text-align:left
+}
+
+td.tdUAH2
+{
+	color:black;
+	font-family:Arial;
+	font-size:8pt;
+	font-weight:normal;
+	text-align:left
+}
+
+p.pUA2
+{
+	color:#222299;
+	font-family:Arial;
+	font-weight:normal;
+	font-size:8pt;
+}
+
+td.tdUANumber
+{
+	font-family:Arial;
+	font-size:8pt;
+	font-weight:normal;
+	text-align:left
+}
+
+input.bTB2Hover
+{
+	cursor: hand;
+	background-color:rgb(248, 232, 167);
+	color: black;
+	width: 25;
+	height: 25;
+	font-family: Wingdings 2;
+	font-weight: normal;
+	font-size: 13pt
+}
+input.bTB2Hovers
+{
+	cursor: hand;
+	background-color:rgb(248, 232, 167);
+	color: black;
+	width: 20;
+	height: 20;
+	font-family: Wingdings 2;
+	font-weight: normal;
+	font-size: 8pt
+}
+
+input.bTBFind
+{
+	cursor: hand;
+	color: navy;
+	width: 60;
+	height: 20;
+	font-family: Arial;
+	font-weight: normal;
+	font-size: 8pt
+}
+
+input.txtDataInput
+{
+	width: 80;
+	height: 18;
+	border: 1;
+	border-color: black;
+	font-weight: normal;
+	font-size: 8pt
+}
+input.txtDataInput1
+{
+	width: 150;
+	height: 18;
+	border: 1;
+	border-color: black;
+	font-weight: normal;
+	font-size: 8pt
+}
+select.selDataInput
+{
+	width: 150;
+	height: 18;
+	border: 1;
+	border-color: black;
+	font-weight: normal;
+	font-size: 8pt
+}
+select.selDataInputBig
+{
+	width: 200;
+	height: 18;
+	border: 1;
+	border-color: black;
+	font-weight: normal;
+	font-size: 8pt
+}
+select.selDataInputBig1
+{
+	width: 250;
+	height: 18;
+	border: 1;
+	border-color: black;
+	font-weight: normal;
+	font-size: 8pt
+}
+
+td.tdBan1{text-align:center; color:rgb(250,80,80); background:url(.//Images/3dBanner.bmp)}
+td.tdH1{text-align:left; background-color:rgb(130,130,130); font-family:Aerial; font-weight:bold; font-size:12pt; color:white}
+td.tdH2{font-family:Arial; font-weight:normal; font-size:8pt; color:black; height:28; background:url(.//Images/3dBanner.bmp)}
+td.tdH3{text-align:right; background-color:lime}
+td.tdH4{font-family:Arial; font-weight:normal; font-size:8pt; color:rgb(0,46,99); text-align:left; vertical-align:middle}
+td.tdH5{font-family:Arial; font-weight:bold; font-size:8pt; color:black; text-align:left}
+td.tdH15{font-family:Arial; font-weight:bold; font-size:8pt; color:black; text-align:right}
+td.tdH6{font-family:Arial; font-weight:normal; font-size:8pt; color:black; text-align:left}
+td.tdH7{font-family:Arial; font-weight:bold; font-size:8pt; color:black; text-align:center}
+td.tdH8{font-family:Arial; font-weight:bold; font-size:12pt; color:black}
+
+td.tdInfo{font-family:Arial; font-weight:bold; font-size:8pt; color:rgb(0,46,99)}
+td.tdInfoHdr{font-family:Webdings; font-weight:bold; font-size:14pt; color:rgb(0,46,99); vertical-align:top}
+td.tdHDetail1{font-family:Arial; font-weight:normal; font-size:8pt; background-color:rgb(0,46,99); color:White}
+	
+td.tdListH{font-family:Arial; font-weight:bold; font-size:8pt}
+td.tdList{font-family:Arial; font-weight:normal; font-size:8pt}
+table.tableList{width:100%; color:black}
+table.tableListSelected{width:100%; background-color:rgb(204,213,224); color:black}
+table.tableBusy{color:navy; font-family:Arial; font-weight:normal; font-size:8pt}
+
+input.txtInp{font-family:Arial; font-weight:normal; font-size:8pt; color:black; text-align:left}
+input.bNav{cursor:hand; background:color(white); color:rgb(228,170,63); width:14; border:0; font-family:Webdings; font-weight:bold; font-size:13pt}
+input.bNav2{cursor:hand; background:color(white); color:blue; width:14; border:0; font-family:Webdings; font-weight:bold; font-size:13pt}
+
+BODY
+{
+    BACKGROUND-COLOR: white;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif;
+    FONT-SIZE: .8em;
+    FONT-WEIGHT: normal;
+    LETTER-SPACING: normal;
+    TEXT-TRANSFORM: none;
+    WORD-SPACING: normal
+}
+
+H1, H2, H3, H4, H5, TH, THEAD, TFOOT
+{
+    COLOR: #003366;
+}
+H1	{	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:	2em;
+	font-weight:	700;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+H2	{	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:	1.75em;
+	font-weight:	700;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+H3	{	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:	1.58em;
+	font-weight:	500;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+H4	{	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:	1.33em;
+	font-weight:	500;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+H5, DT	{	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:	1em;
+	font-weight:	700;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+H6	{	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:	.8em;
+	font-weight:	700;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+TFOOT, THEAD	{	
+	font-size:	1em;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	font-family: Arial, Helvetica, sans-serif;
+	}	
+		
+TH	{	
+	vertical-align:	baseline;
+	font-size:	1em;
+	font-weight:	bold;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	font-family: Arial, Helvetica, sans-serif;
+	}	
+
+
+A:link	{	
+	text-decoration:	none;
+	color:	#3333cc;
+	}	
+		
+A:visited	{	
+	text-decoration:	none;
+	color:	#333399;
+	}	
+		
+A:active	{	
+	text-decoration:	none;
+	color:	#333399;
+	}	
+		
+A:hover	{	
+	text-decoration:	underline;
+	color:	#3333cc;
+	}
+	
+SMALL	{	
+	font-size:	.7em;
+	}	
+
+BIG	{	
+	font-size:	1.17em;
+	}	
+
+BLOCKQUOTE, PRE	{	
+	font-family:	Courier New, monospace;
+	}	
+	
+
+UL LI	{	
+	list-style-type:	square ;
+	}	
+
+UL LI LI	{	
+	list-style-type:	disc;
+	}	
+
+UL LI LI LI	{	
+	list-style-type:	circle;
+	}	
+	
+OL LI	{	
+	list-style-type:	decimal;
+	}	
+
+OL OL LI	{	
+	list-style-type:	lower-alpha;
+	}	
+
+OL OL OL LI	{	
+	list-style-type:	lower-roman;
+	}	
+
+IMG 	{
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	}
+
+TABLE#brd80
+{
+    border: gray 1px solid;    
+    width: 80%; 
+    padding: 1px;   
+}
+TD#HtlBorder
+{
+    border-top: gray 1px solid; 
+    border-left: gray 1px solid;
+    border-right: 0;       
+    border-bottom: 0;    
+    color:black;
+    font-family:Arial;
+    font-size:8pt;
+    font-weight:bold;
+    text-align:center
+}
+TD#HtlrBorder
+{
+    border-top: gray 1px solid; 
+    border-left: gray 1px solid;
+    border-right: gray 1px solid;       
+    border-bottom: 0;    
+    color:black;
+    font-family:Arial;
+    font-size:8pt;
+    font-weight:bold;
+    text-align:center
+}
+TD#tlBorder
+{
+    border-top: gray 1px solid; 
+    border-left: gray 1px solid;
+    border-right: 0;       
+    border-bottom: 0;   
+    color:black;
+    font-family:Arial;
+	font-size:8pt;
+	font-weight:normal;
+	text-align:center
+}
+TD#tlcBorder
+{
+    border-top: gray 1px solid; 
+    border-left: gray 1px solid;
+    border-right: 0;       
+    border-bottom: 0;   
+    BACKGROUND-COLOR: #e6dfd6; 
+    color:black;
+    font-family:Arial;
+	font-size:8pt;
+	font-weight:normal;
+	text-align:center
+}
+TD#tlrBorder
+{
+    border-top: gray 1px solid; 
+    border-left: gray 1px solid;
+    border-right: gray 1px solid;       
+    border-bottom: 0;    
+    color:black;
+    font-family:Arial;
+	font-size:8pt;
+	font-weight:normal;
+	text-align:center
+}
+TD#tlrcBorder
+{
+    border-top: gray 1px solid; 
+    border-left: gray 1px solid;
+    border-right: gray 1px solid;       
+    border-bottom: 0;
+    BACKGROUND-COLOR: #e6dfd6;    
+    color:black;
+    font-family:Arial;
+	font-size:8pt;
+	font-weight:normal;
+	text-align:center
+}
+TD#lBorder
+{
+    border-top: 0; 
+    border-left: gray 1px solid;
+    border-right: 0;       
+    border-bottom: 0;    
+    color:black;
+    font-family:Arial;
+	font-size:8pt;
+	font-weight:normal;
+	text-align:center
+}
+TD#tlbrBorder
+{
+    border-top: gray 1px solid; 
+    border-left: gray 1px solid;
+    border-right: gray 1px solid;       
+    border-bottom: 0;    
+    color:black;
+    font-family:Arial;
+	font-size:8pt;
+	font-weight:normal;
+	text-align:center
+}
+TD#lbBorder
+{
+    border-top: 0; 
+    border-left: gray 1px solid;
+    border-right: 0;       
+    border-bottom: gray 1px solid;    
+    color:black;
+    font-family:Arial;
+	font-size:8pt;
+	font-weight:normal;
+	text-align:center
+}
+
+TD#tlbBorder
+{
+    border-top: gray 1px solid; 
+    border-left: gray 1px solid;
+    border-right: 0;       
+    border-bottom: gray 1px solid;    
+    color:black;
+    font-family:Arial;
+	font-size:8pt;
+	font-weight:normal;
+	text-align:center
+}
+TD#tlbcBorder
+{
+    border-top: gray 1px solid; 
+    border-left: gray 1px solid;
+    border-right: 0;       
+    border-bottom: gray 1px solid; 
+    BACKGROUND-COLOR: #e6dfd6;   
+    color:black;
+    font-family:Arial;
+	font-size:8pt;
+	font-weight:normal;
+	text-align:center
+}
+TD#HtlbBorder
+{
+    border-top: gray 1px solid; 
+    border-left: gray 1px solid;
+    border-right: 0;       
+    border-bottom: gray 1px solid;    
+    color:black;
+    font-family:Arial;
+	font-size:8pt;
+	font-weight:bold;
+	text-align:center
+}
+TD#tlrbBorder
+{
+    border-top: gray 1px solid; 
+    border-left: gray 1px solid;
+    border-right: gray 1px solid;       
+    border-bottom: gray 1px solid;    
+    color:black;
+    font-family:Arial;
+	font-size:8pt;
+	font-weight:normal;
+	text-align:center
+}
+TD#tlrbcBorder
+{
+    border-top: gray 1px solid; 
+    border-left: gray 1px solid;
+    border-right: gray 1px solid;       
+    border-bottom: gray 1px solid;
+    BACKGROUND-COLOR: #e6dfd6;     
+    color:black;
+    font-family:Arial;
+	font-size:8pt;
+	font-weight:normal;
+	text-align:center
+}
+TD#topBorder
+{
+    border-top: gray 1px solid; 
+    border-left: 0;
+    border-right: 0;       
+    border-bottom: 0;    
+    color:black;
+    font-family:Arial;
+	font-size:8pt;
+	font-weight:normal;
+	text-align:center
+}
+INPUT.submit
+ {
+    font-weight: normal;
+    font-size: 8pt;
+    font-family: Verdana, Arial;
+    cursor: hand;
+ }
+HR { height: 1pt; color: #002e63; }
+TEXTAREA.ta
+{
+font-family:Arial; font-weight:normal; font-size:8pt;}
+div.tips
+{
+	cursor: hand;
+	
+}

@@ -1,0 +1,123 @@
+<html>
+<!-- Sitemap 1.0 -->
+<object type="text/site properties">
+  <param name="SiteType" value="toc">
+  <param name="Image Width" value="16">
+  <param name="Window Styles" value="0x800002">
+  <param name="ExWindow Styles" value="0x100">
+</object>
+<ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="BTM Overview">
+    <param name="Local" value="btm overview.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="New Items">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="learn about the new items page">
+      <param name="Local" value="New_Items\Learn about the New Items Page.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="creating a new item and submitting it for processing">
+      <param name="Local" value="New_Items\Creating a New Item and Submitting it for Processing.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="creating and saving a new item without submitting it">
+      <param name="Local" value="New_Items\Creating and Saving a New Item without Submitting It.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="deleting a saved new item">
+      <param name="Local" value="New_Items\Deleting a Saved New Item.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="editing and submitting a saved new item">
+      <param name="Local" value="New_Items\Editing and Submitting a Saved New Item.htm">
+    </object>
+    </ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Submitted Items">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="learn about the submitted items page">
+      <param name="Local" value="Submitted_Items\Learn about the Submitted Items Page.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="adding a comment to a submitted item and resubmitting it">
+      <param name="Local" value="Submitted_Items\Adding a comment to a submitted item and resubmitting it.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="checking the workflow number for a submitted item">
+      <param name="Local" value="Submitted_Items\Checking the Workflow Number for a Submitted Item.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="reviewing progress on a submitted item">
+      <param name="Local" value="Submitted_Items\Reviewing progress on a Submitted Item.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="reviewing the date an item was submitted">
+      <param name="Local" value="Submitted_Items\Reviewing the Date an Item was Submitted.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="search for a submitted item by contract number">
+      <param name="Local" value="Submitted_Items\Search for a submitted item by contract number.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="search for a submitted item by workflow number">
+      <param name="Local" value="Submitted_Items\Search for a submitted item by workflow number.htm">
+    </object>
+    </ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Inbox">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="learn about the inbox items folder">
+      <param name="Local" value="Inbox\Learn about the Inbox Items folder.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="add a comment to an inbox item">
+      <param name="Local" value="Inbox\Add a comment to an Inbox item.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="close an inbox item">
+      <param name="Local" value="Inbox\Close an Inbox Item.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="search for an inbox item by workflow number">
+      <param name="Local" value="Inbox\Search for an Inbox item by workflow number.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="search for an item in the inbox by contract number">
+      <param name="Local" value="Inbox\Search for an item in the Inbox by contract number.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="view a reply to a workflow item">
+      <param name="Local" value="Inbox\view a reply to a workflow item.htm">
+    </object>
+    </ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Closed Items">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="learn about the closed items folder">
+      <param name="Local" value="Closed_Items\Learn about the Closed Items folder.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="add a comment to a closed item and submit">
+      <param name="Local" value="Closed_Items\Add a comment to a closed item and submit.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="search for a closed item by contract number">
+      <param name="Local" value="Closed_Items\Search for a closed item by contract number.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="search for a closed item by workflow number">
+      <param name="Local" value="Closed_Items\search for a closed item by workflow number.htm">
+    </object>
+    </ul>
+</ul>
+</html>

@@ -1,0 +1,67 @@
+BODY
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10pt;
+    COLOR: black;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: white
+}
+H1
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 16pt;
+    COLOR: black;
+    FONT-FAMILY: Arial, Verdana;
+    TEXT-DECORATION: none
+}
+H2
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: black;
+    FONT-FAMILY: Arial, Verdana;
+    TEXT-DECORATION: none
+}
+A
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    COLOR: blue;
+    FONT-FAMILY: Arial, Verdana;
+    TEXT-DECORATION: underline
+}
+A:hover
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    COLOR: blue;
+    FONT-FAMILY: Arial, Verdana;
+    TEXT-DECORATION: none
+}
+TABLE
+{
+    BORDER-RIGHT: medium none;
+    PADDING-RIGHT: 5px;
+    BORDER-TOP: medium none;
+    PADDING-LEFT: 5px;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10pt;
+    PADDING-BOTTOM: 5px;
+    VERTICAL-ALIGN: top;
+    BORDER-LEFT: medium none;
+    WIDTH: 100%;
+    COLOR: black;
+    PADDING-TOP: 5px;
+    BORDER-BOTTOM: medium none;
+    FONT-FAMILY: Arial, Verdana;
+    TEXT-ALIGN: left
+}
+OL
+{
+    LIST-STYLE-TYPE: decimal
+}
+UL
+{
+    LIST-STYLE-POSITION: inside;
+    LIST-STYLE-TYPE: disc
+}

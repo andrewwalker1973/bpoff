@@ -1,0 +1,1075 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://www.Orion.net/webservices" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://www.Orion.net/webservices" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.Orion.net/webservices">
+      <s:element name="ServiceRequestBizTalk">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XMLInstruction" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ServiceRequestBizTalkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ServiceRequestBizTalkResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SecurityContext" type="s0:SecurityContext" />
+      <s:complexType name="SecurityContext">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ContextXML" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="ServiceRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XMLInstruction" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ServiceRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ServiceRequestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ServiceImageRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XMLInstruction" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ServiceImageRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ServiceImageRequestResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CM_GetCampaigns">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="campaignStatus" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CM_GetCampaignsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CM_GetCampaignsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CM_GetReasons">
+        <s:complexType />
+      </s:element>
+      <s:element name="CM_GetReasonsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CM_GetReasonsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CM_GetReasonsForCampaign">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="campaignId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CM_GetReasonsForCampaignResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CM_GetReasonsForCampaignResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CM_GetDivisions">
+        <s:complexType />
+      </s:element>
+      <s:element name="CM_GetDivisionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CM_GetDivisionsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CM_GetCompanies">
+        <s:complexType />
+      </s:element>
+      <s:element name="CM_GetCompaniesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CM_GetCompaniesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CM_GetOverallStats">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="divisionId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="regionId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="branchId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="consultantCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="campaignId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CM_GetOverallStatsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CM_GetOverallStatsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CM_OverallStatDrillDown">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="statType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="divisionId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="regionId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="branchId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="consultantCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="campaignId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CM_OverallStatDrillDownResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CM_OverallStatDrillDownResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CM_CAEntryForm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="consultantCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="campaignId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dtStartDDMMYYYY" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dtEndDDMMYYYY" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CM_CAEntryFormResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CM_CAEntryFormResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CM_GetRegions">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nodeId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CM_GetRegionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CM_GetRegionsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CM_GetBranches">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nodeId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CM_GetBranchesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CM_GetBranchesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CM_GetConsultants">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nodeId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CM_GetConsultantsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CM_GetConsultantsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateIndexingInformation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="caseNumber" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="xmlData" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateIndexingInformationResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="CM_UpdatePolicyNumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="caseNumber" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="PolicyNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CM_UpdatePolicyNumberResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="CM_UpdateConsultantCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CaseNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Consultant_cd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CM_UpdateConsultantCodeResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="CM_BranchSummary">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="branchId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="campaignId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CM_BranchSummaryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CM_BranchSummaryResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClearCache">
+        <s:complexType />
+      </s:element>
+      <s:element name="ClearCacheResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClearCacheResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVersions">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetVersionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVersionsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CM_GetPolicyNoRequired">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DestQueue" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CampaignId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Reason_text" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Reason_Type_Cd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CM_GetPolicyNoRequiredResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CM_GetPolicyNoRequiredResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsComm_DocumentsForTypes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="contractNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DocTypes" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsComm_DocumentsForTypesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsComm_DocumentsForTypesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </types>
+  <message name="ServiceRequestBizTalkSoapIn">
+    <part name="parameters" element="s0:ServiceRequestBizTalk" />
+  </message>
+  <message name="ServiceRequestBizTalkSoapOut">
+    <part name="parameters" element="s0:ServiceRequestBizTalkResponse" />
+  </message>
+  <message name="ServiceRequestBizTalkSecurityContext">
+    <part name="SecurityContext" element="s0:SecurityContext" />
+  </message>
+  <message name="ServiceRequestSoapIn">
+    <part name="parameters" element="s0:ServiceRequest" />
+  </message>
+  <message name="ServiceRequestSoapOut">
+    <part name="parameters" element="s0:ServiceRequestResponse" />
+  </message>
+  <message name="ServiceRequestSecurityContext">
+    <part name="SecurityContext" element="s0:SecurityContext" />
+  </message>
+  <message name="ServiceImageRequestSoapIn">
+    <part name="parameters" element="s0:ServiceImageRequest" />
+  </message>
+  <message name="ServiceImageRequestSoapOut">
+    <part name="parameters" element="s0:ServiceImageRequestResponse" />
+  </message>
+  <message name="ServiceImageRequestSecurityContext">
+    <part name="SecurityContext" element="s0:SecurityContext" />
+  </message>
+  <message name="CM_GetCampaignsSoapIn">
+    <part name="parameters" element="s0:CM_GetCampaigns" />
+  </message>
+  <message name="CM_GetCampaignsSoapOut">
+    <part name="parameters" element="s0:CM_GetCampaignsResponse" />
+  </message>
+  <message name="CM_GetCampaignsSecurityContext">
+    <part name="SecurityContext" element="s0:SecurityContext" />
+  </message>
+  <message name="CM_GetReasonsSoapIn">
+    <part name="parameters" element="s0:CM_GetReasons" />
+  </message>
+  <message name="CM_GetReasonsSoapOut">
+    <part name="parameters" element="s0:CM_GetReasonsResponse" />
+  </message>
+  <message name="CM_GetReasonsSecurityContext">
+    <part name="SecurityContext" element="s0:SecurityContext" />
+  </message>
+  <message name="CM_GetReasonsForCampaignSoapIn">
+    <part name="parameters" element="s0:CM_GetReasonsForCampaign" />
+  </message>
+  <message name="CM_GetReasonsForCampaignSoapOut">
+    <part name="parameters" element="s0:CM_GetReasonsForCampaignResponse" />
+  </message>
+  <message name="CM_GetReasonsForCampaignSecurityContext">
+    <part name="SecurityContext" element="s0:SecurityContext" />
+  </message>
+  <message name="CM_GetDivisionsSoapIn">
+    <part name="parameters" element="s0:CM_GetDivisions" />
+  </message>
+  <message name="CM_GetDivisionsSoapOut">
+    <part name="parameters" element="s0:CM_GetDivisionsResponse" />
+  </message>
+  <message name="CM_GetDivisionsSecurityContext">
+    <part name="SecurityContext" element="s0:SecurityContext" />
+  </message>
+  <message name="CM_GetCompaniesSoapIn">
+    <part name="parameters" element="s0:CM_GetCompanies" />
+  </message>
+  <message name="CM_GetCompaniesSoapOut">
+    <part name="parameters" element="s0:CM_GetCompaniesResponse" />
+  </message>
+  <message name="CM_GetCompaniesSecurityContext">
+    <part name="SecurityContext" element="s0:SecurityContext" />
+  </message>
+  <message name="CM_GetOverallStatsSoapIn">
+    <part name="parameters" element="s0:CM_GetOverallStats" />
+  </message>
+  <message name="CM_GetOverallStatsSoapOut">
+    <part name="parameters" element="s0:CM_GetOverallStatsResponse" />
+  </message>
+  <message name="CM_GetOverallStatsSecurityContext">
+    <part name="SecurityContext" element="s0:SecurityContext" />
+  </message>
+  <message name="CM_OverallStatDrillDownSoapIn">
+    <part name="parameters" element="s0:CM_OverallStatDrillDown" />
+  </message>
+  <message name="CM_OverallStatDrillDownSoapOut">
+    <part name="parameters" element="s0:CM_OverallStatDrillDownResponse" />
+  </message>
+  <message name="CM_OverallStatDrillDownSecurityContext">
+    <part name="SecurityContext" element="s0:SecurityContext" />
+  </message>
+  <message name="CM_CAEntryFormSoapIn">
+    <part name="parameters" element="s0:CM_CAEntryForm" />
+  </message>
+  <message name="CM_CAEntryFormSoapOut">
+    <part name="parameters" element="s0:CM_CAEntryFormResponse" />
+  </message>
+  <message name="CM_CAEntryFormSecurityContext">
+    <part name="SecurityContext" element="s0:SecurityContext" />
+  </message>
+  <message name="CM_GetRegionsSoapIn">
+    <part name="parameters" element="s0:CM_GetRegions" />
+  </message>
+  <message name="CM_GetRegionsSoapOut">
+    <part name="parameters" element="s0:CM_GetRegionsResponse" />
+  </message>
+  <message name="CM_GetRegionsSecurityContext">
+    <part name="SecurityContext" element="s0:SecurityContext" />
+  </message>
+  <message name="CM_GetBranchesSoapIn">
+    <part name="parameters" element="s0:CM_GetBranches" />
+  </message>
+  <message name="CM_GetBranchesSoapOut">
+    <part name="parameters" element="s0:CM_GetBranchesResponse" />
+  </message>
+  <message name="CM_GetBranchesSecurityContext">
+    <part name="SecurityContext" element="s0:SecurityContext" />
+  </message>
+  <message name="CM_GetConsultantsSoapIn">
+    <part name="parameters" element="s0:CM_GetConsultants" />
+  </message>
+  <message name="CM_GetConsultantsSoapOut">
+    <part name="parameters" element="s0:CM_GetConsultantsResponse" />
+  </message>
+  <message name="CM_GetConsultantsSecurityContext">
+    <part name="SecurityContext" element="s0:SecurityContext" />
+  </message>
+  <message name="updateIndexingInformationSoapIn">
+    <part name="parameters" element="s0:updateIndexingInformation" />
+  </message>
+  <message name="updateIndexingInformationSoapOut">
+    <part name="parameters" element="s0:updateIndexingInformationResponse" />
+  </message>
+  <message name="updateIndexingInformationSecurityContext">
+    <part name="SecurityContext" element="s0:SecurityContext" />
+  </message>
+  <message name="CM_UpdatePolicyNumberSoapIn">
+    <part name="parameters" element="s0:CM_UpdatePolicyNumber" />
+  </message>
+  <message name="CM_UpdatePolicyNumberSoapOut">
+    <part name="parameters" element="s0:CM_UpdatePolicyNumberResponse" />
+  </message>
+  <message name="CM_UpdatePolicyNumberSecurityContext">
+    <part name="SecurityContext" element="s0:SecurityContext" />
+  </message>
+  <message name="CM_UpdateConsultantCodeSoapIn">
+    <part name="parameters" element="s0:CM_UpdateConsultantCode" />
+  </message>
+  <message name="CM_UpdateConsultantCodeSoapOut">
+    <part name="parameters" element="s0:CM_UpdateConsultantCodeResponse" />
+  </message>
+  <message name="CM_UpdateConsultantCodeSecurityContext">
+    <part name="SecurityContext" element="s0:SecurityContext" />
+  </message>
+  <message name="CM_BranchSummarySoapIn">
+    <part name="parameters" element="s0:CM_BranchSummary" />
+  </message>
+  <message name="CM_BranchSummarySoapOut">
+    <part name="parameters" element="s0:CM_BranchSummaryResponse" />
+  </message>
+  <message name="CM_BranchSummarySecurityContext">
+    <part name="SecurityContext" element="s0:SecurityContext" />
+  </message>
+  <message name="ClearCacheSoapIn">
+    <part name="parameters" element="s0:ClearCache" />
+  </message>
+  <message name="ClearCacheSoapOut">
+    <part name="parameters" element="s0:ClearCacheResponse" />
+  </message>
+  <message name="ClearCacheSecurityContext">
+    <part name="SecurityContext" element="s0:SecurityContext" />
+  </message>
+  <message name="GetVersionsSoapIn">
+    <part name="parameters" element="s0:GetVersions" />
+  </message>
+  <message name="GetVersionsSoapOut">
+    <part name="parameters" element="s0:GetVersionsResponse" />
+  </message>
+  <message name="GetVersionsSecurityContext">
+    <part name="SecurityContext" element="s0:SecurityContext" />
+  </message>
+  <message name="CM_GetPolicyNoRequiredSoapIn">
+    <part name="parameters" element="s0:CM_GetPolicyNoRequired" />
+  </message>
+  <message name="CM_GetPolicyNoRequiredSoapOut">
+    <part name="parameters" element="s0:CM_GetPolicyNoRequiredResponse" />
+  </message>
+  <message name="CM_GetPolicyNoRequiredSecurityContext">
+    <part name="SecurityContext" element="s0:SecurityContext" />
+  </message>
+  <message name="ConsComm_DocumentsForTypesSoapIn">
+    <part name="parameters" element="s0:ConsComm_DocumentsForTypes" />
+  </message>
+  <message name="ConsComm_DocumentsForTypesSoapOut">
+    <part name="parameters" element="s0:ConsComm_DocumentsForTypesResponse" />
+  </message>
+  <message name="ConsComm_DocumentsForTypesSecurityContext">
+    <part name="SecurityContext" element="s0:SecurityContext" />
+  </message>
+  <portType name="PrimaryServiceEntrySoap">
+    <operation name="ServiceRequestBizTalk">
+      <documentation>Generic wrapper for multiple service requests</documentation>
+      <input message="s0:ServiceRequestBizTalkSoapIn" />
+      <output message="s0:ServiceRequestBizTalkSoapOut" />
+    </operation>
+    <operation name="ServiceRequest">
+      <documentation>Generic wrapper for multiple service requests</documentation>
+      <input message="s0:ServiceRequestSoapIn" />
+      <output message="s0:ServiceRequestSoapOut" />
+    </operation>
+    <operation name="ServiceImageRequest">
+      <input message="s0:ServiceImageRequestSoapIn" />
+      <output message="s0:ServiceImageRequestSoapOut" />
+    </operation>
+    <operation name="CM_GetCampaigns">
+      <documentation>Get the MaD Campaign list</documentation>
+      <input message="s0:CM_GetCampaignsSoapIn" />
+      <output message="s0:CM_GetCampaignsSoapOut" />
+    </operation>
+    <operation name="CM_GetReasons">
+      <documentation>Get the OCC Reason list</documentation>
+      <input message="s0:CM_GetReasonsSoapIn" />
+      <output message="s0:CM_GetReasonsSoapOut" />
+    </operation>
+    <operation name="CM_GetReasonsForCampaign">
+      <documentation>Get the OCC Reason list filtered on Campaign</documentation>
+      <input message="s0:CM_GetReasonsForCampaignSoapIn" />
+      <output message="s0:CM_GetReasonsForCampaignSoapOut" />
+    </operation>
+    <operation name="CM_GetDivisions">
+      <documentation>Get the MaD Division list</documentation>
+      <input message="s0:CM_GetDivisionsSoapIn" />
+      <output message="s0:CM_GetDivisionsSoapOut" />
+    </operation>
+    <operation name="CM_GetCompanies">
+      <documentation>Get the Companies list for Consultant Outstanding</documentation>
+      <input message="s0:CM_GetCompaniesSoapIn" />
+      <output message="s0:CM_GetCompaniesSoapOut" />
+    </operation>
+    <operation name="CM_GetOverallStats">
+      <documentation>Get the overall stats drill down</documentation>
+      <input message="s0:CM_GetOverallStatsSoapIn" />
+      <output message="s0:CM_GetOverallStatsSoapOut" />
+    </operation>
+    <operation name="CM_OverallStatDrillDown">
+      <documentation>Get the overall stats drill down</documentation>
+      <input message="s0:CM_OverallStatDrillDownSoapIn" />
+      <output message="s0:CM_OverallStatDrillDownSoapOut" />
+    </operation>
+    <operation name="CM_CAEntryForm">
+      <documentation>Get the GAPGAL Competition</documentation>
+      <input message="s0:CM_CAEntryFormSoapIn" />
+      <output message="s0:CM_CAEntryFormSoapOut" />
+    </operation>
+    <operation name="CM_GetRegions">
+      <documentation>Get the MaD Region list</documentation>
+      <input message="s0:CM_GetRegionsSoapIn" />
+      <output message="s0:CM_GetRegionsSoapOut" />
+    </operation>
+    <operation name="CM_GetBranches">
+      <documentation>Get the MaD Branch list</documentation>
+      <input message="s0:CM_GetBranchesSoapIn" />
+      <output message="s0:CM_GetBranchesSoapOut" />
+    </operation>
+    <operation name="CM_GetConsultants">
+      <documentation>Get the MaD consultant list</documentation>
+      <input message="s0:CM_GetConsultantsSoapIn" />
+      <output message="s0:CM_GetConsultantsSoapOut" />
+    </operation>
+    <operation name="updateIndexingInformation">
+      <documentation>Update the indexing information for the case, based on the XML data provided</documentation>
+      <input message="s0:updateIndexingInformationSoapIn" />
+      <output message="s0:updateIndexingInformationSoapOut" />
+    </operation>
+    <operation name="CM_UpdatePolicyNumber">
+      <documentation>Update the policy Number</documentation>
+      <input message="s0:CM_UpdatePolicyNumberSoapIn" />
+      <output message="s0:CM_UpdatePolicyNumberSoapOut" />
+    </operation>
+    <operation name="CM_UpdateConsultantCode">
+      <documentation>Update the Consultant Code</documentation>
+      <input message="s0:CM_UpdateConsultantCodeSoapIn" />
+      <output message="s0:CM_UpdateConsultantCodeSoapOut" />
+    </operation>
+    <operation name="CM_BranchSummary">
+      <documentation>Get the branch summary</documentation>
+      <input message="s0:CM_BranchSummarySoapIn" />
+      <output message="s0:CM_BranchSummarySoapOut" />
+    </operation>
+    <operation name="ClearCache">
+      <documentation>Clear the Web Cache</documentation>
+      <input message="s0:ClearCacheSoapIn" />
+      <output message="s0:ClearCacheSoapOut" />
+    </operation>
+    <operation name="GetVersions">
+      <documentation>Get the version number of the service and accompaning components.</documentation>
+      <input message="s0:GetVersionsSoapIn" />
+      <output message="s0:GetVersionsSoapOut" />
+    </operation>
+    <operation name="CM_GetPolicyNoRequired">
+      <documentation>Returns True if the Outcome moves the the case to LBFinalised Queue and the combination of Campaign and Reason indicates that a Policy Number is required</documentation>
+      <input message="s0:CM_GetPolicyNoRequiredSoapIn" />
+      <output message="s0:CM_GetPolicyNoRequiredSoapOut" />
+    </operation>
+    <operation name="ConsComm_DocumentsForTypes">
+      <documentation>Partial URLs to document images</documentation>
+      <input message="s0:ConsComm_DocumentsForTypesSoapIn" />
+      <output message="s0:ConsComm_DocumentsForTypesSoapOut" />
+    </operation>
+  </portType>
+  <binding name="PrimaryServiceEntrySoap" type="s0:PrimaryServiceEntrySoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="ServiceRequestBizTalk">
+      <soap:operation soapAction="http://www.Orion.net/webservices/ServiceRequestBizTalk" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header message="s0:ServiceRequestBizTalkSecurityContext" part="SecurityContext" use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ServiceRequest">
+      <soap:operation soapAction="http://www.Orion.net/webservices/ServiceRequest" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header message="s0:ServiceRequestSecurityContext" part="SecurityContext" use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ServiceImageRequest">
+      <soap:operation soapAction="http://www.Orion.net/webservices/ServiceImageRequest" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header message="s0:ServiceImageRequestSecurityContext" part="SecurityContext" use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CM_GetCampaigns">
+      <soap:operation soapAction="http://www.Orion.net/webservices/CM_GetCampaigns" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header message="s0:CM_GetCampaignsSecurityContext" part="SecurityContext" use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CM_GetReasons">
+      <soap:operation soapAction="http://www.Orion.net/webservices/CM_GetReasons" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header message="s0:CM_GetReasonsSecurityContext" part="SecurityContext" use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CM_GetReasonsForCampaign">
+      <soap:operation soapAction="http://www.Orion.net/webservices/CM_GetReasonsForCampaign" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header message="s0:CM_GetReasonsForCampaignSecurityContext" part="SecurityContext" use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CM_GetDivisions">
+      <soap:operation soapAction="http://www.Orion.net/webservices/CM_GetDivisions" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header message="s0:CM_GetDivisionsSecurityContext" part="SecurityContext" use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CM_GetCompanies">
+      <soap:operation soapAction="http://www.Orion.net/webservices/CM_GetCompanies" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header message="s0:CM_GetCompaniesSecurityContext" part="SecurityContext" use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CM_GetOverallStats">
+      <soap:operation soapAction="http://www.Orion.net/webservices/CM_GetOverallStats" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header message="s0:CM_GetOverallStatsSecurityContext" part="SecurityContext" use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CM_OverallStatDrillDown">
+      <soap:operation soapAction="http://www.Orion.net/webservices/CM_OverallStatDrillDown" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header message="s0:CM_OverallStatDrillDownSecurityContext" part="SecurityContext" use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CM_CAEntryForm">
+      <soap:operation soapAction="http://www.Orion.net/webservices/CM_CAEntryForm" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header message="s0:CM_CAEntryFormSecurityContext" part="SecurityContext" use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CM_GetRegions">
+      <soap:operation soapAction="http://www.Orion.net/webservices/CM_GetRegions" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header message="s0:CM_GetRegionsSecurityContext" part="SecurityContext" use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CM_GetBranches">
+      <soap:operation soapAction="http://www.Orion.net/webservices/CM_GetBranches" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header message="s0:CM_GetBranchesSecurityContext" part="SecurityContext" use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CM_GetConsultants">
+      <soap:operation soapAction="http://www.Orion.net/webservices/CM_GetConsultants" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header message="s0:CM_GetConsultantsSecurityContext" part="SecurityContext" use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updateIndexingInformation">
+      <soap:operation soapAction="http://www.Orion.net/webservices/updateIndexingInformation" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header message="s0:updateIndexingInformationSecurityContext" part="SecurityContext" use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CM_UpdatePolicyNumber">
+      <soap:operation soapAction="http://www.Orion.net/webservices/CM_UpdatePolicyNumber" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header message="s0:CM_UpdatePolicyNumberSecurityContext" part="SecurityContext" use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CM_UpdateConsultantCode">
+      <soap:operation soapAction="http://www.Orion.net/webservices/CM_UpdateConsultantCode" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header message="s0:CM_UpdateConsultantCodeSecurityContext" part="SecurityContext" use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CM_BranchSummary">
+      <soap:operation soapAction="http://www.Orion.net/webservices/CM_BranchSummary" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header message="s0:CM_BranchSummarySecurityContext" part="SecurityContext" use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ClearCache">
+      <soap:operation soapAction="http://www.Orion.net/webservices/ClearCache" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header message="s0:ClearCacheSecurityContext" part="SecurityContext" use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetVersions">
+      <soap:operation soapAction="http://www.Orion.net/webservices/GetVersions" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header message="s0:GetVersionsSecurityContext" part="SecurityContext" use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CM_GetPolicyNoRequired">
+      <soap:operation soapAction="http://www.Orion.net/webservices/CM_GetPolicyNoRequired" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header message="s0:CM_GetPolicyNoRequiredSecurityContext" part="SecurityContext" use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ConsComm_DocumentsForTypes">
+      <soap:operation soapAction="http://www.Orion.net/webservices/ConsComm_DocumentsForTypes" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header message="s0:ConsComm_DocumentsForTypesSecurityContext" part="SecurityContext" use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="PrimaryServiceEntrySoap12" type="s0:PrimaryServiceEntrySoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+    <operation name="ServiceRequestBizTalk">
+      <soap12:operation soapAction="http://www.Orion.net/webservices/ServiceRequestBizTalk" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+        <soap12:header message="tns:ServiceRequestBizTalkSecurityContext" part="SecurityContext" use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </input>
+      <output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </output>
+    </operation>
+    <operation name="ServiceRequest">
+      <soap12:operation soapAction="http://www.Orion.net/webservices/ServiceRequest" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+        <soap12:header message="tns:ServiceRequestSecurityContext" part="SecurityContext" use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </input>
+      <output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </output>
+    </operation>
+    <operation name="ServiceImageRequest">
+      <soap12:operation soapAction="http://www.Orion.net/webservices/ServiceImageRequest" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+        <soap12:header message="tns:ServiceImageRequestSecurityContext" part="SecurityContext" use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </input>
+      <output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </output>
+    </operation>
+    <operation name="CM_GetCampaigns">
+      <soap12:operation soapAction="http://www.Orion.net/webservices/CM_GetCampaigns" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+        <soap12:header message="tns:CM_GetCampaignsSecurityContext" part="SecurityContext" use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </input>
+      <output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </output>
+    </operation>
+    <operation name="CM_GetReasons">
+      <soap12:operation soapAction="http://www.Orion.net/webservices/CM_GetReasons" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+        <soap12:header message="tns:CM_GetReasonsSecurityContext" part="SecurityContext" use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </input>
+      <output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </output>
+    </operation>
+    <operation name="CM_GetReasonsForCampaign">
+      <soap12:operation soapAction="http://www.Orion.net/webservices/CM_GetReasonsForCampaign" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+        <soap12:header message="tns:CM_GetReasonsForCampaignSecurityContext" part="SecurityContext" use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </input>
+      <output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </output>
+    </operation>
+    <operation name="CM_GetDivisions">
+      <soap12:operation soapAction="http://www.Orion.net/webservices/CM_GetDivisions" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+        <soap12:header message="tns:CM_GetDivisionsSecurityContext" part="SecurityContext" use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </input>
+      <output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </output>
+    </operation>
+    <operation name="CM_GetCompanies">
+      <soap12:operation soapAction="http://www.Orion.net/webservices/CM_GetCompanies" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+        <soap12:header message="tns:CM_GetCompaniesSecurityContext" part="SecurityContext" use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </input>
+      <output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </output>
+    </operation>
+    <operation name="CM_GetOverallStats">
+      <soap12:operation soapAction="http://www.Orion.net/webservices/CM_GetOverallStats" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+        <soap12:header message="tns:CM_GetOverallStatsSecurityContext" part="SecurityContext" use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </input>
+      <output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </output>
+    </operation>
+    <operation name="CM_OverallStatDrillDown">
+      <soap12:operation soapAction="http://www.Orion.net/webservices/CM_OverallStatDrillDown" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+        <soap12:header message="tns:CM_OverallStatDrillDownSecurityContext" part="SecurityContext" use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </input>
+      <output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </output>
+    </operation>
+    <operation name="CM_CAEntryForm">
+      <soap12:operation soapAction="http://www.Orion.net/webservices/CM_CAEntryForm" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+        <soap12:header message="tns:CM_CAEntryFormSecurityContext" part="SecurityContext" use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </input>
+      <output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </output>
+    </operation>
+    <operation name="CM_GetRegions">
+      <soap12:operation soapAction="http://www.Orion.net/webservices/CM_GetRegions" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+        <soap12:header message="tns:CM_GetRegionsSecurityContext" part="SecurityContext" use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </input>
+      <output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </output>
+    </operation>
+    <operation name="CM_GetBranches">
+      <soap12:operation soapAction="http://www.Orion.net/webservices/CM_GetBranches" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+        <soap12:header message="tns:CM_GetBranchesSecurityContext" part="SecurityContext" use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </input>
+      <output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </output>
+    </operation>
+    <operation name="CM_GetConsultants">
+      <soap12:operation soapAction="http://www.Orion.net/webservices/CM_GetConsultants" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+        <soap12:header message="tns:CM_GetConsultantsSecurityContext" part="SecurityContext" use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </input>
+      <output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </output>
+    </operation>
+    <operation name="updateIndexingInformation">
+      <soap12:operation soapAction="http://www.Orion.net/webservices/updateIndexingInformation" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+        <soap12:header message="tns:updateIndexingInformationSecurityContext" part="SecurityContext" use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </input>
+      <output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </output>
+    </operation>
+    <operation name="CM_UpdatePolicyNumber">
+      <soap12:operation soapAction="http://www.Orion.net/webservices/CM_UpdatePolicyNumber" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+        <soap12:header message="tns:CM_UpdatePolicyNumberSecurityContext" part="SecurityContext" use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </input>
+      <output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </output>
+    </operation>
+    <operation name="CM_UpdateConsultantCode">
+      <soap12:operation soapAction="http://www.Orion.net/webservices/CM_UpdateConsultantCode" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+        <soap12:header message="tns:CM_UpdateConsultantCodeSecurityContext" part="SecurityContext" use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </input>
+      <output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </output>
+    </operation>
+    <operation name="CM_BranchSummary">
+      <soap12:operation soapAction="http://www.Orion.net/webservices/CM_BranchSummary" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+        <soap12:header message="tns:CM_BranchSummarySecurityContext" part="SecurityContext" use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </input>
+      <output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </output>
+    </operation>
+    <operation name="ClearCache">
+      <soap12:operation soapAction="http://www.Orion.net/webservices/ClearCache" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+        <soap12:header message="tns:ClearCacheSecurityContext" part="SecurityContext" use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </input>
+      <output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </output>
+    </operation>
+    <operation name="GetVersions">
+      <soap12:operation soapAction="http://www.Orion.net/webservices/GetVersions" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+        <soap12:header message="tns:GetVersionsSecurityContext" part="SecurityContext" use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </input>
+      <output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </output>
+    </operation>
+    <operation name="CM_GetPolicyNoRequired">
+      <soap12:operation soapAction="http://www.Orion.net/webservices/CM_GetPolicyNoRequired" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+        <soap12:header message="tns:CM_GetPolicyNoRequiredSecurityContext" part="SecurityContext" use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </input>
+      <output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </output>
+    </operation>
+    <operation name="ConsComm_DocumentsForTypes">
+      <soap12:operation soapAction="http://www.Orion.net/webservices/ConsComm_DocumentsForTypes" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+        <soap12:header message="tns:ConsComm_DocumentsForTypesSecurityContext" part="SecurityContext" use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </input>
+      <output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </output>
+    </operation>
+  </binding>
+  <service name="PrimaryServiceEntry">
+    <port name="PrimaryServiceEntrySoap" binding="s0:PrimaryServiceEntrySoap">
+      <soap:address location="http://workflowqa/mindkeywf/mindkeywf.asmx" />
+    </port>
+    <port name="PrimaryServiceEntrySoap12" binding="s0:PrimaryServiceEntrySoap12">
+      <soap12:address location="http://workflowqa/mindkeywf/mindkeywf.asmx" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+    </port>
+  </service>
+</definitions>
